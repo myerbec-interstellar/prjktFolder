@@ -1,27 +1,30 @@
- /** Return true if the card number is valid */
- public static boolean isValid(long number) 
+public class Main
+{
+public static void Main(String[] args) {
+        int n =9;
 
- /** Get the result from Step 2 */
- public static int sumOfDoubleEvenPlace(long number) 
+        for (int i = 1; i <= n; i++) {
 
- /**
- * Return this number if it is a single digit, otherwise, return the sum of the
- * two digits
- */
-
- public static int getDigit(int number)
-
- /** Return sum of odd place digits in number */
- public static int sumOfOddPlace(long number)
-
-/** Return true if the number d is a prefix for number */
-public static boolean prefixMatched(long number, int d)
-
-/** Return the number of digits in d */
-public static int getSize(long d)
-
-/**
- * Return the first k number of digits from number. If the number of digits in
- * number is less than k, return number.
- */
-public static long getPrefix(long number, int k)
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("   ");
+            }
+        for (int k = i; k >= 1; k--) {
+                int square = k * k;
+                if (square < 10) {
+                    System.out.print(" " + square + " ");
+                } else {
+                    System.out.print(square + " ");
+                }
+            } System.out.println();
+        }
+  for (int i = n - 1; i >= 1; i) {
+           for (int j = 0; j < n - i; j++) {
+                System.out.print("   ");
+       } for (int k = i; k >= 1; k--) {
+                    System.out.print(" " + square + " ");
+                } else {
+                    System.out.print(square + " ");
+                } } System.out.println();
+        }
+    }
+}
